@@ -3,8 +3,6 @@ import requests
 
 
 def main():
-    print("Pulling set: " + sys.argv[1])
-
     base_url = "https://api.scryfall.com/cards/search?order=set&unique=prints"
     set_param = "&q=set:" + sys.argv[1]
     full_url = base_url + set_param
